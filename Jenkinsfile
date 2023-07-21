@@ -2,7 +2,6 @@ pipeline{
         agent{
              label{
                   label"built-in"
-                  customWorkspace "/mnt/assignment-2"
              }
         }
 
@@ -20,7 +19,7 @@ pipeline{
              agent{
                     label{
                           label"slave-1"
-                          customWorkspace "/mnt/assignment-2"
+                          
                     }
              }
            steps{
@@ -32,7 +31,7 @@ pipeline{
              agent{
                     label{
                           label"slave-2"
-                          customWorkspace "/mnt/assignment-2"
+                          
                     }
              }
            steps{
@@ -44,7 +43,7 @@ pipeline{
              agent{
                     label{
                           label"slave-3"
-                          customWorkspace "/mnt/assignment-2"
+                          
                     }
              }
            steps{
