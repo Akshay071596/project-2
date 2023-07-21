@@ -2,7 +2,7 @@ pipeline{
         agent{
              label{
                   label"slave-2"
-                  customWorkspace "/mnt/at-2"
+                  customWorkspace "/mnt/assignment -2"
              }
         }
   stages{
@@ -16,7 +16,7 @@ pipeline{
          }
         stage("stage-2"){
                         steps{
-                                sh" sudo chmod -R 777 /var/www/html
+                                sh "sudo chmod -R 777 /var/www/html "
                                 sh "sudo cp index.html /var/www/html"
                         }
         }
